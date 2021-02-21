@@ -1,13 +1,7 @@
 'use strict';
 
 const request = require('request');
-
-class Quiz {
-    constructor(quizData) {
-        this.quizzes = quizData.results;
-        this.score = 0;
-    }
-}
+const Quiz = require("../models/quiz");
 
 module.exports = {
     getData: (req, res) => {
